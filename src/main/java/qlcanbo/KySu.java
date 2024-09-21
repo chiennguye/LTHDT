@@ -2,42 +2,40 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package laptrinhhuongdt;
+package qlcanbo;
 
 /**
  *
  * @author chienkoi
  */
-public class NhanVien extends CanBo{
-    private String job;
+public class KySu extends CanBo{
+    private String major;
 
-    public NhanVien() {
+    public KySu() {
     }
 
-    public NhanVien(String job, String name, byte age, String gender, String adress) {
+
+    public KySu(String major, String name, byte age, String gender, String adress) {
         super(name, age, gender, adress);
-        this.job = job;
+        this.major = major;
     }
 
-    public String getJob() {
-        return job;
+    public String getMajor() {
+        return major;
     }
 
-    public void setJob(String job) {
-        this.job = job;
+    public void setMajor(String major) {
+        this.major = major;
     }
 
     @Override
     public String toString() {
-        return "NhanVien{" + 
-                " job=" + job + 
+        return "KySu{" + 
+                "major=" + major + 
                 " name= " +name+
                 " age= " +age+
                 " gender= " +gender+
-                " adress= " +adress+
+                " adress= " +adress+                
                 '}';
-    }
-    
-    
-    
+    } 
 }
